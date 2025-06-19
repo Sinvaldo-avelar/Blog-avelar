@@ -12,7 +12,7 @@ const JSON_POSTS_FILE_PATH = resolve(
   'seed',  // Corrigido para apontar para a pasta correta
   'posts.json',
 );
-const SIMULATE_WAIT_IN_MS = 5000; // Simula um atraso de 500ms para simular uma opração assincrono
+const SIMULATE_WAIT_IN_MS = 0; // Simula um atraso de 500ms para simular uma opração assincrono
 
 
 export class JsonPostRepository implements PostRepository {
