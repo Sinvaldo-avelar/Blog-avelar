@@ -1,15 +1,12 @@
 export type PostModel = {
-    id: string;
-    title: string;
-    slug: string;
-    content: string;
-    excerpt: string;
-    coverImageUrl: string;
-    publishedAt: boolean;
-    createdAt: string;
-    updatedAt: string;
-    author: string;
-
-
-
+  id: string;
+  title: string;
+  slug: string;
+  excerpt: string;
+  content: string;
+  coverImageUrl: string;
+  published: boolean;
+  createdAt: string;
+  updatedAt: string;
+  author: string;
 };
