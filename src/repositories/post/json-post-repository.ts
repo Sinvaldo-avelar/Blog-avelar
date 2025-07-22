@@ -14,7 +14,7 @@ const JSON_POSTS_FILE_PATH = resolve(
 const SIMULATE_WAIT_IN_MS = 0;
 
 export class JsonPostRepository implements PostRepository {
-  findByid(id: string): Promise<PostModel> {
+  findByid(): Promise<PostModel> {
       throw new Error('Method not implemented.');
   }
   private async simulateWait() {
@@ -41,7 +41,7 @@ export class JsonPostRepository implements PostRepository {
   }
 
   async findById(id: string): Promise<PostModel> {
-    await this.simulateWait();
+
 
     const posts = await this.findAllPublic();
     const post = posts.find(post => post.id === id);
@@ -52,7 +52,6 @@ export class JsonPostRepository implements PostRepository {
   }
 
   async findBySlug(slug: string): Promise<PostModel> {
-    await this.simulateWait();
 
     const posts = await this.findAllPublic();
     const post = posts.find(post => post.slug === slug);
