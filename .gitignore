@@ -1,4 +1,23 @@
+db.sqlite3
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Ignora build e dependências
+.next/
+node_modules/
+dist/
+out/
+
+# Ignora arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Ignora logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ambiente local
+.env
+
 
 # dependencies
 /node_modules

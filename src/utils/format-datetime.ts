@@ -19,5 +19,13 @@ export function fromatRelativeDate(rawDate: string): string {
   });
 }
 
+export function formatHour(timestampsMs: number): string {
+  const date = new Date(timestampsMs);
+
+  return format(date, "HH:mm:ss", {
+    locale: ptBR,
+  });
+}
+
 
 
